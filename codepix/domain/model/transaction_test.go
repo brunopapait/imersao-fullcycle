@@ -75,4 +75,5 @@ func TestModel_ChangeStatusOfATransaction(t *testing.T) {
 	transaction.Cancel("Error")
 	require.Equal(t, transaction.Status, model.TransactionError)
 	require.Equal(t, transaction.CancelDescription, "Error")
+
 }
